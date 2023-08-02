@@ -18,3 +18,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<A-i>", ":ToggleTerm height=40 direction=float<CR>")
+

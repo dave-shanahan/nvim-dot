@@ -24,4 +24,11 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+        'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
+
 end)
