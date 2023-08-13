@@ -75,8 +75,6 @@ require('lspconfig')['solargraph'].setup {
 capabilities = capabilities
 }
 
-
-
 require'lspconfig'.emmet_language_server.setup({
   filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
   init_options = {
