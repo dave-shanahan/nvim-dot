@@ -35,14 +35,18 @@ return require('packer').startup(function(use)
 
     use 'lewis6991/gitsigns.nvim'
 
-    use 'neovim/nvim-lspconfig'
-
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
+    -- completion
     use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'rafamadriz/friendly-snippets'
 
-    use 'williamboman/mason.nvim'
+    -- LSP
+    use {
+        'williamboman/mason.nvim',
+        'williamboman/mason-lspconfig.nvim',
+        'neovim/nvim-lspconfig',
+    }
 
 end)
