@@ -25,3 +25,4 @@ vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeFindFile)
 vim.keymap.set("n", "<C-m>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<A-i>", ":ToggleTerm height=40 direction=float<CR>")
 
+vim.keymap.set("n", "<leader>gb", ":GitBlameOpenCommitURL<CR>")

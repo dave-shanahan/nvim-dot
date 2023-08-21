@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     }
 
     use { "ellisonleao/gruvbox.nvim" }
+    use "rebelot/kanagawa.nvim"
 
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
@@ -48,5 +49,7 @@ return require('packer').startup(function(use)
         'williamboman/mason-lspconfig.nvim',
         'neovim/nvim-lspconfig',
     }
+
+    use 'f-person/git-blame.nvim'
 
 end)
