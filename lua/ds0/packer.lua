@@ -16,10 +16,6 @@ return require('packer').startup(function(use)
     use { "ellisonleao/gruvbox.nvim" }
     use "rebelot/kanagawa.nvim"
 
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-    end}
-
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
@@ -59,4 +55,13 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
     }
+
+    use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
+    }
+
 end)
