@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "solargraph", "emmet_language_server" },
+    ensure_installed = { "lua_ls", "solargraph", "emmet_language_server", "clangd" },
 })
 
 local on_attach = function(_, _)
@@ -44,3 +44,8 @@ require("lspconfig").emmet_language_server.setup({
     excludelanguages = {},
   },
 })
+
+require("lspconfig").clangd.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
